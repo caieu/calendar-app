@@ -23,14 +23,15 @@ const getMonthDates = (date: DateTime): string[] => {
 export const Calendar = () => {
   const currentDate = DateTime.fromFormat(useAppSelector(selectCurrentDate), DATE_FORMAT);
   const dates = getMonthDates(currentDate);
+  const gridRows = Math.ceil(dates.length / CALENDAR_ROWS);
 
   return (
     <div className="flex flex-col flex-1 md:max-h-calendar-home">
       <CalendarHeader />
       <div
         className={classNames(
-          `w-full flex-1 grid grid-cols-1 grid-rows-1 md:grid-cols-7 truncate divide-y-2 divide-x-2`,
-          `md:grid-rows-${Math.ceil(dates.length / CALENDAR_ROWS)}`,
+          'w-full flex-1 grid grid-cols-1 grid-rows-1 md:grid-cols-7 truncate divide-y-2 divide-x-2',
+          gridRows === 5 ? 'md:grid-rows-5' : 'md:grid-rows-6',
         )}
       >
         {dates.map((date, index) => (

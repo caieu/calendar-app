@@ -2,6 +2,8 @@
 
 A Calendar App built using `create-react-app` with `Typescript`, `Redux`, `Luxon` and `Tailwind`.
 
+![Calendar App](https://github.com/caieu/calendar-app/blob/main/public/calendar.png)
+
 ## Features
 
 - Ability to add a new “reminder” (max 30 chars) for a user entered day and time.
@@ -14,9 +16,7 @@ A Calendar App built using `create-react-app` with `Typescript`, `Redux`, `Luxon
 
 ## Live Demo
 
-### TO-DO:
-
-- remove `Form submission canceled because the form is not connected` warning on delete
+[Calendar App](https://caieu-calendar-app.herokuapp.com/)
 
 ## Instalation
 
