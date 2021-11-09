@@ -70,9 +70,8 @@ export const CreateReminderForm = () => {
             <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
               <div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">New Reminder</h3>
                   <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                    Add the information that will be shown at the calendar.
+                    Add the information that will be shown on the calendar.
                   </p>
                 </div>
                 <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
